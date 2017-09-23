@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-class AtmForm extends Component {
+class MoneyExpress extends Component {
   constructor(props){
     super(props);
     this.state = {bal: 10000};
@@ -23,17 +22,25 @@ class AtmForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container" id="body">
+      <br/>
+      <br/>
+      <h1> COMMONWEALTH BANK OF AUSTRALIA </h1>
       <h3>
         Money: {this.state.bal}
       </h3>
-
-            <input type="text" placeholder="Enter Amount" ref="amount"/>
-      <button onClick={this.withdraw}>withdraw</button>
-      <button onClick={this.deposit}>Deposit</button>
+      <div className="col-sm-6">
+      <input type="text" placeholder="Enter Amount" ref="amount"/>
+      </div>
+      <div className="col-sm-6">
+      <button onClick={this.withdraw}>withdraw / cashout babe</button>
+      </div>
+      <div className="col-sm-6">
+      <button onClick={this.deposit}>Deposit / show me some love</button>
+      </div>
       </div>
     );
   }
 }
 
-export default AtmForm;
+export default MoneyExpress;
