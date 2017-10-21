@@ -1,5 +1,6 @@
 h1 {
   text-align: center;
+  margin: 20px;
 }
 
 h3 {
@@ -8,11 +9,10 @@ h3 {
 }
 
 #body {
-  background-color: gray;
   background-image: url(http://d39fx46bzv2q62.cloudfront.net/wp-content/uploads/2012/10/commbank_logo1.jpg);
-  background: cover, no-repeat;
+  background-repeat: no-repeat;
   max-height: 100%;
   max-width: 100%;
-  opacity: 80%;
   text-align: center;
+  font: bold;
 }

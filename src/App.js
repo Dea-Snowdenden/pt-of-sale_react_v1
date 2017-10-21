@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button, FormControl } from 'react-bootstrap';
 import './App.css';
 
 class MoneyExpress extends Component {
@@ -29,15 +30,13 @@ class MoneyExpress extends Component {
       <h3>
         Money: {this.state.bal}
       </h3>
-      <div className="col-sm-6">
-      <input type="text" placeholder="Enter Amount" ref="amount"/>
-      </div>
-      <div className="col-sm-6">
-      <button onClick={this.withdraw}>withdraw / cashout babe</button>
-      </div>
-      <div className="col-sm-6">
-      <button onClick={this.deposit}>Deposit / show me some love</button>
-      </div>
+      <div>
+      <FormControl input type="text" placeholder="Enter Amount" ref="amount"/> </div>
+      <br/>
+      <Button className="box" onClick={this.withdraw}>withdraw / cashout babe</Button> 
+      <br/>
+      <Button className="box" onClick={this.deposit}>Deposit / show me some love</Button> 
+   
       </div>
     );
   }
